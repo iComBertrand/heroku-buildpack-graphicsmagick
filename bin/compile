@@ -100,7 +100,9 @@ package_download "${REMOTE_PATH}" "${VENDORED_GRAPHICSMAGICK}"
 mkdir -p "$BUILD_DIR/bin/"
 cp $VENDORED_GRAPHICSMAGICK/bin/* "$BUILD_DIR/bin/"
 
-echo "$(find . -name 'libjasper.so*')" | arrow
+find . -name 'libjasper.so*' | while read line; do
+    echo "Processing file '$line'"| arrow
+done
 
 cp /usr/lib/x86_64-linux-gnu/libjasper.so* "$BUILD_DIR/bin/."
 
