@@ -100,7 +100,7 @@ package_download "${REMOTE_PATH}" "${VENDORED_GRAPHICSMAGICK}"
 mkdir -p "$BUILD_DIR/bin/"
 cp $VENDORED_GRAPHICSMAGICK/bin/* "$BUILD_DIR/bin/"
 
-find libjasper.so*
+find . -name "libjasper.so*"
 
 cp /usr/lib/x86_64-linux-gnu/libjasper.so* "$BUILD_DIR/bin/."
 
