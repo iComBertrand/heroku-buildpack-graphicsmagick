@@ -102,7 +102,7 @@ cp $VENDORED_GRAPHICSMAGICK/bin/* "$BUILD_DIR/bin/"
 
 cp -R $VENDORED_GRAPHICSMAGICK/* $gm_lib_path
 
-cp /usr/lib/x86_64-linux-gnu/libjasper.so* "$BUILD_DIR/bin/"
+cp /usr/lib/x86_64-linux-gnu/libjasper.so.1 "$BUILD_DIR/bin/"
 
 echo "Building runtime environment for graphicsmagick" | arrow
 mkdir -p $BUILD_DIR/.profile.d
