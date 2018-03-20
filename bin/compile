@@ -92,8 +92,6 @@ echo "Coping libjasper" | arrow
 libjasper_path=$BUILD_DIR/vendor/libjasper
 mkdir -p $libjasper_path
 
-echo "libjasper path : '$libjasper_path'" | arrow
-
 cp /usr/lib/x86_64-linux-gnu/libjasper.so* $libjasper_path
 
 echo "Installing graphicsmagick $GRAPHICS_MAGICK_VERSION" | arrow
